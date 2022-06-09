@@ -11,7 +11,7 @@
 
 This repository contains the code for a project designed to embed/extract text stegs into still images via wavelet transforms (coefficient changes). The wavelet transform is currently the least noticeable method of information embedding from the point of view of steganalysis, since the embedding occurs in the wavelet coefficients of the compressed image, and when the image is restored, the embedded information is "smeared" over the image (information embedding in the frequency domain). This allows the image to be more robust to affine transformations (squeezing, stretching the image, etc.).
 
-The project is implemented as a `GUI` application `PyQt5`, which allows you to manually set the level of decomposition of wavelet transforms and select the output image format (JPEG2000 format is recommended, because it is based on a compression method based on wavelet transforms, which makes images of this format more resistant to various types of influences on it_).
+The project is implemented as a `GUI` application `PyQt5`, which allows you to manually set the level of decomposition of wavelet transforms and select the output image format (_`JPEG2000` format is recommended, because it is based on a compression method based on wavelet transforms, which makes images of this format more resistant to various types of influences on it_).
 
 Rules for embedding information (in which coefficients the embedding will take place is determined by the key file `key.npy`, which can be generated using the `Python` script `keygen.py`).
 
